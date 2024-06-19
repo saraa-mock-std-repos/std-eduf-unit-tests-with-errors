@@ -6,7 +6,7 @@ class Product
 {
     private int $id;
     private \DateTimeImmutable $createdAt;
-    private string $nom;
+    private int $nom;
     private int $quantite;
     private string $description;
 
@@ -33,17 +33,17 @@ class Product
     }
 
     /**
-     * @return string
+     * @return int
      */
-    public function getNom(): string
+    public function getNom(): int
     {
         return $this->nom;
     }
 
     /**
-     * @param string $nom
+     * @param int $nom
      */
-    public function setNom(string $nom): void
+    public function setNom(int $nom): void
     {
         $this->nom = $nom;
     }
